@@ -2,6 +2,5 @@ class_name InputEventSwipe
 extends InputEventAction
 
 var direction := Vector2.ZERO
-
-func _init(dir: Vector2) -> void:
-    direction = dir.snapped(Vector2(.1, .1))
+var start_position := Vector2.ZERO
+var end_position := Vector2.ZERO

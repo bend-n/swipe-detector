@@ -8,3 +8,5 @@ func _ready():
 func _input(event):
 	if event is InputEventSwipe:
 		print(event.direction)
+		print(event.start_position)
+		print(event.end_position)

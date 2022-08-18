@@ -13,7 +13,7 @@ func _ready():
 	timer.one_shot = true
 
 
-func _unhandled_input(event: InputEvent) -> void:
+func _input(event: InputEvent) -> void:
 	if not event is InputEventScreenTouch:
 		return
 	if event.pressed:  # press
@@ -30,4 +30,8 @@ func set_swipe_start_position(position: Vector2) -> void:
 func _end_detection(position: Vector2) -> void:
 	timer.stop()
 	var direction := (position - swipe_start_position).normalized()
-	Input.parse_input_event(InputEventSwipe.new(direction))
+	var swipe = InputEventSwipe.new()
+	swipe.direction = direction
+	swipe.start_position = swipe_start_position
+	swipe.end_position = position
+	Input.parse_input_event(swipe)
