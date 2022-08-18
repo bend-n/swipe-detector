@@ -1,0 +1,24 @@
+{
+  "name": "@bendn/swipe-detector",
+  "version": "1.0.0",
+  "description": "godot swipe detector",
+  "main": "SwipeDetector.gd",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bend-n/swipe-detector.git"
+  },
+  "keywords": [
+    "godot",
+    "godot-engine",
+    "swipe"
+  ],
+  "author": "bendn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bend-n/swipe-detector/issues"
+  },
+  "homepage": "https://github.com/bend-n/swipe-detector#readme"
+}
